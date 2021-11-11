@@ -1,0 +1,142 @@
+.initiative-desc {
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #C60C32;
+    margin-bottom: 55px;
+    span {
+      display: block;
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: normal;
+      color: #000;
+    }
+  }
+  &__item {
+    padding: 15px 0 30px 110px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 42px;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background-image: url(../img/point.png);
+      background-size: 100% auto;
+    }
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 84px;
+    height: 84px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: #C60C32;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &--disabled {
+      background-color: #555555;
+    }
+  }
+  &__subtitle {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+    svg {
+      flex-shrink: 0;
+      margin-left: 15px;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    p {
+      margin: 20px 0;
+    }
+    b {
+      font-weight: bold;
+    }
+  }
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #C60C32;
+    img {
+      width: 51px;
+      margin-right: 20px;
+      flex-shrink: 0;
+    }
+    &:hover {
+      color: #000;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__title {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 25px;
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    &__item {
+      padding: 0 0 40px 75px;
+      &:before {
+        left: 26px;
+      }
+    }
+    &__icon {
+      width: 54px;
+      height: 54px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__date {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+      p {
+        margin: 10px 0;
+      }
+    }
+    &__link {
+      font-size: 12px;
+      line-height: 14px;
+      img {
+        width: 40px;
+      }
+    }
+  }
+}

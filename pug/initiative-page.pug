@@ -1,18 +1,9 @@
 extends blocks/base.pug
 
 block title 
-	title Инициативы
+	title Инициатива
 
 block style-libs
-	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
-	//- link(rel="stylesheet", href="css/libs/fullpage.css")
-	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
-	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
-	//- link(rel="stylesheet", href="css/libs/slick.css")
-	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
-	//- link(rel="stylesheet", href="css/libs/aos.css")
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500italic,700italic,400,300,500,700subset=latin,cyrillic-ext&amp;display=swap" type="text/css" rel="stylesheet">
 
@@ -26,7 +17,58 @@ block content
 				.initiatives-nv__img
 					img(src="img/image_1.jpg", alt="")
 				.initiatives-nv__body
-					
+					.initiative-desc
+						.initiative-desc__title Хронология инициативы: 
+							span Возможности инноваций в сфере парковочных пространств Москвы
+						.initiative-desc__item 
+							.initiative-desc__icon
+								img(src="img/contract.svg", alt="")
+							.initiative-desc__subtitle Поступление инициативы в МТПП
+							.initiative-desc__date 01.03.2021
+								svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M12 0C5.40469 0 0 5.40469 0 12C0 18.5953 5.40469 24 12 24C18.5953 24 24 18.5953 24 12C24 5.40469 18.5953 0 12 0Z" fill="#F3F5F9")
+									path(d="M24 12C24 18.5953 18.5953 24 12 24V0C18.5953 0 24 5.40469 24 12Z" fill="#E1E6F0")
+									path(d="M12 22.5938C17.8508 22.5938 22.5938 17.8508 22.5938 12C22.5938 6.14923 17.8508 1.40625 12 1.40625C6.14923 1.40625 1.40625 6.14923 1.40625 12C1.40625 17.8508 6.14923 22.5938 12 22.5938Z" fill="#A0E65C")
+									path(d="M22.5938 12C22.5938 17.8219 17.8219 22.5938 12 22.5938V1.40625C17.8219 1.40625 22.5938 6.17813 22.5938 12Z" fill="#79CC52")
+									path(d="M17.469 9.22253L15.4797 7.234C15.2051 6.95935 14.7601 6.95935 14.4855 7.234L11.9998 9.7201L10.5936 11.1266L9.51348 10.0465C9.23884 9.77185 8.79386 9.77185 8.51922 10.0465L6.53069 12.035C6.25605 12.3097 6.25605 12.7547 6.53069 13.0293L10.0964 16.595C10.2338 16.7324 10.4137 16.801 10.5935 16.801C10.7734 16.801 10.9533 16.7324 11.0906 16.595L11.9998 15.6859L17.469 10.2168C17.6008 10.0849 17.675 9.90643 17.675 9.71968C17.675 9.53293 17.6008 9.35439 17.469 9.22253Z" fill="#F3F5F9")
+									path(d="M17.6751 9.71967C17.6751 9.53292 17.601 9.35437 17.4691 9.22256L15.4799 7.23403C15.2052 6.95939 14.7602 6.95939 14.4856 7.23403L12 9.72009V15.6859L17.4691 10.2168C17.601 10.085 17.6751 9.90642 17.6751 9.71967Z" fill="#E1E6F0")
+							.initiative-desc__text 
+								p
+									b Заявка члена
+									|  Экспертного Совета о намерении выступить перед бизнес-сообществом с инициативой введения инновационных изменений в сфере профессиональной деятельности.
+							a(href="#").initiative-desc__link
+								img(src="img/pdf.svg", alt="")
+								span Входящее – письмо обращение.pdf
+						.initiative-desc__item 
+							.initiative-desc__icon
+								img(src="img/analysis.svg", alt="")
+							.initiative-desc__subtitle Предварительная аналитика МТПП
+							.initiative-desc__date 05.03.2021 – 20.03.2021
+								svg(width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
+									path(d="M12 0C5.40469 0 0 5.40469 0 12C0 18.5953 5.40469 24 12 24C18.5953 24 24 18.5953 24 12C24 5.40469 18.5953 0 12 0Z" fill="#F3F5F9")
+									path(d="M24 12C24 18.5953 18.5953 24 12 24V0C18.5953 0 24 5.40469 24 12Z" fill="#E1E6F0")
+									path(d="M12 22.5938C17.8508 22.5938 22.5938 17.8508 22.5938 12C22.5938 6.14923 17.8508 1.40625 12 1.40625C6.14923 1.40625 1.40625 6.14923 1.40625 12C1.40625 17.8508 6.14923 22.5938 12 22.5938Z" fill="#A0E65C")
+									path(d="M22.5938 12C22.5938 17.8219 17.8219 22.5938 12 22.5938V1.40625C17.8219 1.40625 22.5938 6.17813 22.5938 12Z" fill="#79CC52")
+									path(d="M17.469 9.22253L15.4797 7.234C15.2051 6.95935 14.7601 6.95935 14.4855 7.234L11.9998 9.7201L10.5936 11.1266L9.51348 10.0465C9.23884 9.77185 8.79386 9.77185 8.51922 10.0465L6.53069 12.035C6.25605 12.3097 6.25605 12.7547 6.53069 13.0293L10.0964 16.595C10.2338 16.7324 10.4137 16.801 10.5935 16.801C10.7734 16.801 10.9533 16.7324 11.0906 16.595L11.9998 15.6859L17.469 10.2168C17.6008 10.0849 17.675 9.90643 17.675 9.71968C17.675 9.53293 17.6008 9.35439 17.469 9.22253Z" fill="#F3F5F9")
+									path(d="M17.6751 9.71967C17.6751 9.53292 17.601 9.35437 17.4691 9.22256L15.4799 7.23403C15.2052 6.95939 14.7602 6.95939 14.4856 7.23403L12 9.72009V15.6859L17.4691 10.2168C17.601 10.085 17.6751 9.90642 17.6751 9.71967Z" fill="#E1E6F0")
+							.initiative-desc__text 
+								p 
+									b Сбор аналитических материалов
+									|  по заявленной проблематике и возможных решений.
+								p 
+									b Определение важности
+									|  обозначенной проблематики для города и предпринимательского сообщества и обоснование необходимости внедрения инновационных решений в этой сфере.
+							a(href="#").initiative-desc__link
+								img(src="img/pdf.svg", alt="")
+								span Отчет – анализ проблематики.pdf
+						.initiative-desc__item 
+							.initiative-desc__icon.initiative-desc__icon--disabled
+								img(src="img/calendar.svg", alt="")
+							.initiative-desc__subtitle Проведение заседания
+							.initiative-desc__date 04.04.2021
+							.initiative-desc__text Назначение даты проведения заседания и оповещение всех членов Экспертного совета по инновационному развитию (ЭСИР) о теме заседания.
+							a(href="#").initiative-desc__link
+								span Ссылка – анонс заседания
 				.initiatives-nv__buttons
 					a(href="#").initiatives-nv__btn.initiatives-nv__btn--prev 
 						svg(width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg")
@@ -40,18 +82,4 @@ block content
 
 block js-libs
 	script(src="js/libs/jquery.min.js")
-	//- script(src="js/libs/jquery.fancybox.min.js")
-	//- script(src="js/libs/slick.min.js")
 	script(src="js/libs/jquery.matchHeight-min.js")
-	//- script(src="js/libs/jquery.inputmask.min.js")
-	//- script(src="js/libs/autosize.min.js")
-	//- script(src="js/libs/tooltipster.bundle.min.js")
-	//- script(src="js/libs/jquery.mmenu.min.all.js")
-	//- script(src="js/libs/fullpage.min.js")
-	//- script(src="js/libs/jquery.vide.min.js")
-	//- script(src="js/libs/jquery.scrollbar.min.js")
-	//- script(src="js/libs/aos.js")
-	//- script(src="js/libs/circle-progress.min.js")
-	//- script(src="js/libs/bootstrap.bundle.min.js") 
-	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
-	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
