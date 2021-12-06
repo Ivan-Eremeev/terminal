@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Добавить предложение</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/jquery.formstyler.css">
+		<link rel="stylesheet" href="css/libs/jquery.formstyler.theme.css">
+		<link rel="stylesheet" href="css/libs/jquery.jscrollpane.css"><link href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500italic,700italic,400,300,500,700subset=latin,cyrillic-ext&amp;display=swap" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body style="margin: 0;">
+		<div class="wrapper-grid">
+			<div class="the-wrapper-block-is-not-for-the-site the-wrapper-block-is-not-for-the-site--big">
+				<!-- form-dc-->
+				<form class="form-dc" action="#">
+					<div class="form-dc__container">
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--12 form-dc__flex">
+								<div class="form-dc__title form-dc__title--mr20">Добавить<br>предложение: <span>*</span></div>
+								<div class="form-dc__input form-dc__grow">
+									<input type="text" required id="input_1">
+									<label for="input_1">Заголовок предложения :</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row"> 
+							<div class="form-dc__col form-dc__col--6"> 
+								<div class="form-dc__select">
+									<select name="#"> 
+										<option value="#"></option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+										<option value="#">Наименование раздела</option>
+									</select>
+									<div class="form-dc__select-label">Раздел   <span>*</span></div>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--6"> 
+								<div class="form-dc__input"> 
+									<input type="text" required id="input_2">
+									<label for="input_2">E-mail <span>*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--12">
+								<div class="form-dc__textarea"> 
+									<textarea id="textarea_1" required></textarea>
+									<label for="textarea_1">Описание :  <span>*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--5">
+								<div class="form-dc__select">
+									<select id="location" name="#"> 
+										<option value="#"></option>
+										<option value="#">Астрахань</option>
+										<option value="#">Башкортостан</option>
+										<option value="#">Белгород</option>
+										<option value="#">Биробиджан</option>
+										<option value="#">Брянск</option>
+										<option value="#">Владивосток</option>
+										<option value="#">Владимир</option>
+										<option value="#">Вологда</option>
+										<option value="#">Астрахань</option>
+										<option value="#">Башкортостан</option>
+										<option value="#">Белгород</option>
+										<option value="#">Биробиджан</option>
+										<option value="#">Брянск</option>
+										<option value="#">Владивосток</option>
+										<option value="#">Владимир</option>
+										<option value="#">Вологда</option>
+									</select>
+									<div class="form-dc__select-label">Регион  <span>*</span></div>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--7 form-dc__flex">
+								<div class="form-dc__title form-dc__title--mr20">Прикрепить видео<br>с ютуб канала:</div>
+								<div class="form-dc__input form-dc__grow">
+									<input type="text" required id="input_3">
+									<label for="input_3">Ссылка на видео с ютуб канала</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--12">
+								<div class="form-dc__title">Укажите цену </div>
+								<div class="js-tabs form-dc__tabs">
+									<ul class="form-dc__triggers" id="tabs_triggers">
+										<li class="active">Обычная цена</li>
+										<li>Диапазон цен</li>
+										<li>Другое</li>
+									</ul>
+									<div class="form-dc__content" id="tabs_content">
+										<div class="form-dc__tabsitem open">
+											<div class="form-dc__row">
+												<div class="form-dc__col form-dc__col--5">
+													<div class="form-dc__input form-dc__input--2">
+														<input type="text" required id="input_4">
+														<label for="input_4">Цена </label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--4">
+													<div class="form-dc__input form-dc__input--2">
+														<input type="text" required id="input_5">
+														<label for="input_5">Цена для членов ТПП : </label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--3">
+													<div class="form-dc__select">
+														<select name="#"> 
+															<option value="#"></option>
+															<option value="#">Рубль</option>
+															<option value="#">Доллар</option>
+															<option value="#">Евро</option>
+														</select>
+														<div class="form-dc__select-label">Валюта</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-dc__tabsitem">
+											<div class="form-dc__row">
+												<div class="form-dc__col form-dc__col--2-5">
+													<div class="form-dc__input form-dc__input--2">
+														<input type="text" required id="input_6">
+														<label for="input_6">Цена до</label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--2-5">
+													<div class="form-dc__input form-dc__input--2">
+														<input type="text" required id="input_7">
+														<label for="input_7">Цена после</label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--4">
+													<div class="form-dc__input form-dc__input--2">
+														<input type="text" required id="input_8">
+														<label for="input_8">Цена для членов ТПП : </label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--3">
+													<div class="form-dc__select">
+														<select name="#"> 
+															<option value="#"></option>
+															<option value="#">Рубль</option>
+															<option value="#">Доллар</option>
+															<option value="#">Евро</option>
+														</select>
+														<div class="form-dc__select-label">Валюта</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-dc__tabsitem">
+											<div class="form-dc__row">
+												<div class="form-dc__col form-dc__col--5">
+													<div class="form-dc__checkblock form-dc__checkblock--mv">
+														<label class="form-dc__ckecktext form-dc__ckecktext--big" for="check1">Цена по договоренности:</label>
+														<input class="form-dc__checkinput" id="check1" type="checkbox">
+														<label class="form-dc__check" for="check1"></label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--4">
+													<div class="form-dc__input form-dc__input--2">
+														<input type="text" required id="input_9">
+														<label for="input_9">Цена для членов ТПП : </label>
+													</div>
+												</div>
+												<div class="form-dc__col form-dc__col--3">
+													<div class="form-dc__select">
+														<select name="#"> 
+															<option value="#"></option>
+															<option value="#">Рубль</option>
+															<option value="#">Доллар</option>
+															<option value="#">Евро</option>
+														</select>
+														<div class="form-dc__select-label">Валюта</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__fileblock">
+									<div class="form-dc__filecontent">
+										<div class="form-dc__filetitle">Прикрепить документы : </div>
+										<div class="form-dc__fileresult">Документ №1.doc</div>
+									</div>
+									<input class="form-dc__fileinput" type="file" id="file_1">
+									<label class="form-dc__filebtn" for="file_1">Загрузить</label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__fileblock">
+									<div class="form-dc__filecontent">
+										<div class="form-dc__filetitle">Прикрепить фотографии о вашем деловом предложении : </div>
+										<div class="form-dc__fileresult">Foto01.jpeg</div>
+									</div>
+									<input class="form-dc__fileinput" type="file" id="file_2">
+									<label class="form-dc__filebtn" for="file_2">Загрузить</label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__fileblock">
+									<div class="form-dc__filecontent">
+										<div class="form-dc__filetitle">Картинка делового предложения</div>
+										<div class="form-dc__fileresult">Foto01.jpeg</div>
+									</div>
+									<input class="form-dc__fileinput" type="file" id="file_3">
+									<label class="form-dc__filebtn" for="file_3">Загрузить	</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--12 form-dc__col--mb0">
+								<div class="form-dc__title">Вознаграждение агенту :</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__input form-dc__input--2">
+									<input type="text" required id="input_10">
+									<label for="input_10">Цена</label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--8">
+								<div class="form-dc__bottomtext">Укажите вознаграждение, которое вы готовы предоставить агенту за продвижение вашего делового предложения.</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-dc__bottom"> 
+						<div class="form-dc__bottomtext"> <span>*</span>— Поля, обязательные для заполнения</div>
+						<div class="form-dc__buttons"> 
+							<button class="form-dc__btn form-dc__btn--green" type="submit">Применить</button><a class="form-dc__btn form-dc__btn--red" href="#">Нужна помощь?</a>
+						</div>
+					</div>
+				</form>
+				<!-- /form-dc-->
+			</div>
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/jquery.formstyler.min.js"> </script>
+		<script src="js/libs/jquery.mousewheel.js"> </script>
+		<script src="js/libs/jquery.jscrollpane.min.js"> </script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

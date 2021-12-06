@@ -1,0 +1,298 @@
+extends blocks/base.pug
+
+block title 
+	title Предложения
+
+block style-libs
+	link(rel="stylesheet", href="css/libs/jquery.formstyler.css")
+	link(rel="stylesheet", href="css/libs/jquery.formstyler.theme.css")
+	link(rel="stylesheet", href="css/libs/jquery.jscrollpane.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500italic,700italic,400,300,500,700subset=latin,cyrillic-ext&amp;display=swap" type="text/css" rel="stylesheet">
+
+block content
+
+	.wrapper-grid
+		.the-wrapper-block-is-not-for-the-site.the-wrapper-block-is-not-for-the-site--big
+
+			// form-dc
+			form(action="#").form-dc
+				.form-dc__items 
+					.form-dc__title.form-dc__title--mb20 Ваши предложения
+					.row-grid 
+						.form-dc__items-col 
+							.offer-item
+								a(href="#").offer-item__block 
+									.offer-item__image
+										img(src="img/offer-image.jpg", alt="") 
+										.offer-item__sticker.offer-item__sticker--city Екатеринбург
+										.offer-item__sticker.offer-item__sticker--rating Рейтинг: 65
+									.offer-item__content 
+										.offer-item__title Подарочные книги в кожаном переплете
+										.offer-item__desc ООО «Творческое объединение «Алькор»
+										.offer-item__price от 9 000 до 30 000 р.
+											.offer-item__sale -15%
+									.offer-item__btn
+										.form-dc__btn.form-dc__btn--green Редактировать
+						.form-dc__items-col 
+							.offer-item
+								a(href="#").offer-item__block 
+									.offer-item__image
+										img(src="img/offer-image.jpg", alt="") 
+										.offer-item__sticker.offer-item__sticker--city Екатеринбург
+										.offer-item__sticker.offer-item__sticker--rating Рейтинг: 65
+									.offer-item__content 
+										.offer-item__title Подарочные книги в кожаном переплете
+										.offer-item__desc ООО «Творческое объединение «Алькор»
+										.offer-item__price от 9 000 до 30 000 р.
+											.offer-item__sale -15%
+									.offer-item__btn
+										.form-dc__btn.form-dc__btn--green Редактировать
+						.form-dc__items-col 
+							.offer-item
+								a(href="#").offer-item__block 
+									.offer-item__image
+										img(src="img/offer-image.jpg", alt="") 
+										.offer-item__sticker.offer-item__sticker--city Екатеринбург
+										.offer-item__sticker.offer-item__sticker--rating Рейтинг: 65
+									.offer-item__content 
+										.offer-item__title Подарочные книги в кожаном переплете
+										.offer-item__desc ООО «Творческое объединение «Алькор»
+										.offer-item__price от 9 000 до 30 000 р.
+											.offer-item__sale -15%
+									.offer-item__btn
+										.form-dc__btn.form-dc__btn--green Редактировать
+					.form-dc__right
+						.form-dc__btn.form-dc__btn--green Добавить предложение
+					.form-dc__line
+				.form-dc__items 
+					.form-dc__title.form-dc__title--mb20 Неактивные предложения
+					.row-grid 
+						.form-dc__items-col 
+							.offer-item
+								a(href="#").offer-item__block.offer-item__block--disable
+									.offer-item__image
+										img(src="img/offer-image.jpg", alt="") 
+										.offer-item__sticker.offer-item__sticker--city Екатеринбург
+										.offer-item__sticker.offer-item__sticker--rating Рейтинг: 65
+									.offer-item__content 
+										.offer-item__title Подарочные книги в кожаном переплете
+										.offer-item__desc ООО «Творческое объединение «Алькор»
+										.offer-item__price от 9 000 до 30 000 р.
+											.offer-item__sale -15%
+									.offer-item__btn
+										.form-dc__btn.form-dc__btn--green Редактировать
+						.form-dc__items-col 
+							.offer-item
+								a(href="#").offer-item__block.offer-item__block--disable
+									.offer-item__image
+										img(src="img/offer-image.jpg", alt="") 
+										.offer-item__sticker.offer-item__sticker--city Екатеринбург
+										.offer-item__sticker.offer-item__sticker--rating Рейтинг: 65
+									.offer-item__content 
+										.offer-item__title Подарочные книги в кожаном переплете
+										.offer-item__desc ООО «Творческое объединение «Алькор»
+										.offer-item__price от 9 000 до 30 000 р.
+											.offer-item__sale -15%
+									.offer-item__btn
+										.form-dc__btn.form-dc__btn--green Редактировать
+						.form-dc__items-col 
+							.offer-item
+								a(href="#").offer-item__block.offer-item__block--disable
+									.offer-item__image
+										img(src="img/offer-image.jpg", alt="") 
+										.offer-item__sticker.offer-item__sticker--city Екатеринбург
+										.offer-item__sticker.offer-item__sticker--rating Рейтинг: 65
+									.offer-item__content 
+										.offer-item__title Подарочные книги в кожаном переплете
+										.offer-item__desc ООО «Творческое объединение «Алькор»
+										.offer-item__price от 9 000 до 30 000 р.
+											.offer-item__sale -15%
+									.offer-item__btn
+										.form-dc__btn.form-dc__btn--green Редактировать
+				.form-dc__container
+					.form-dc__row
+						.form-dc__col.form-dc__col--12.form-dc__flex
+							.form-dc__title.form-dc__title--mr20 Добавить<br>предложение: 
+								span *
+							.form-dc__input.form-dc__grow
+								input(type="text" required)#input_1
+								label(for="input_1") Заголовок предложения :
+					.form-dc__row 
+						.form-dc__col.form-dc__col--6 
+							.form-dc__select
+								select(name="#") 
+									option(value="#")
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+									option(value="#") Наименование раздела
+								.form-dc__select-label Раздел   
+										span *
+						.form-dc__col.form-dc__col--6 
+							.form-dc__input 
+								input(type="text" required)#input_2
+								label(for="input_2") E-mail 
+									span *
+					.form-dc__row
+						.form-dc__col.form-dc__col--12
+							.form-dc__textarea 
+								textarea#textarea_1(required)
+								label(for="textarea_1") Описание :  
+									span *
+					.form-dc__row
+						.form-dc__col.form-dc__col--5
+							.form-dc__select
+								select#location(name="#") 
+									option(value="#")
+									option(value="#") Астрахань
+									option(value="#") Башкортостан
+									option(value="#") Белгород
+									option(value="#") Биробиджан
+									option(value="#") Брянск
+									option(value="#") Владивосток
+									option(value="#") Владимир
+									option(value="#") Вологда
+									option(value="#") Астрахань
+									option(value="#") Башкортостан
+									option(value="#") Белгород
+									option(value="#") Биробиджан
+									option(value="#") Брянск
+									option(value="#") Владивосток
+									option(value="#") Владимир
+									option(value="#") Вологда
+								.form-dc__select-label Регион  
+										span *
+						.form-dc__col.form-dc__col--7.form-dc__flex
+							.form-dc__title.form-dc__title--mr20 Прикрепить видео<br>с ютуб канала:
+							.form-dc__input.form-dc__grow
+								input(type="text" required)#input_3
+								label(for="input_3") Ссылка на видео с ютуб канала
+					.form-dc__row
+						.form-dc__col.form-dc__col--12
+							.form-dc__title Укажите цену 
+							.js-tabs.form-dc__tabs
+								ul#tabs_triggers.form-dc__triggers
+									li.active Обычная цена
+									li Диапазон цен
+									li Другое
+								#tabs_content.form-dc__content
+									div.form-dc__tabsitem.open
+										.form-dc__row
+											.form-dc__col.form-dc__col--5
+												.form-dc__input.form-dc__input--2
+													input(type="text" required)#input_4
+													label(for="input_4") Цена 
+											.form-dc__col.form-dc__col--4
+												.form-dc__input.form-dc__input--2
+													input(type="text" required)#input_5
+													label(for="input_5") Цена для членов ТПП : 
+											.form-dc__col.form-dc__col--3
+												.form-dc__select
+													select(name="#") 
+														option(value="#")
+														option(value="#") Рубль
+														option(value="#") Доллар
+														option(value="#") Евро
+													.form-dc__select-label Валюта
+									div.form-dc__tabsitem
+										.form-dc__row
+											.form-dc__col.form-dc__col--2-5
+												.form-dc__input.form-dc__input--2
+													input(type="text" required)#input_6
+													label(for="input_6") Цена до
+											.form-dc__col.form-dc__col--2-5
+												.form-dc__input.form-dc__input--2
+													input(type="text" required)#input_7
+													label(for="input_7") Цена после
+											.form-dc__col.form-dc__col--4
+												.form-dc__input.form-dc__input--2
+													input(type="text" required)#input_8
+													label(for="input_8") Цена для членов ТПП : 
+											.form-dc__col.form-dc__col--3
+												.form-dc__select
+													select(name="#") 
+														option(value="#")
+														option(value="#") Рубль
+														option(value="#") Доллар
+														option(value="#") Евро
+													.form-dc__select-label Валюта
+									div.form-dc__tabsitem
+										.form-dc__row
+											.form-dc__col.form-dc__col--5
+												.form-dc__checkblock.form-dc__checkblock--mv
+													label(for="check1").form-dc__ckecktext.form-dc__ckecktext--big Цена по договоренности:
+													input#check1(type="checkbox").form-dc__checkinput
+													label(for="check1").form-dc__check
+											.form-dc__col.form-dc__col--4
+												.form-dc__input.form-dc__input--2
+													input(type="text" required)#input_9
+													label(for="input_9") Цена для членов ТПП : 
+											.form-dc__col.form-dc__col--3
+												.form-dc__select
+													select(name="#") 
+														option(value="#")
+														option(value="#") Рубль
+														option(value="#") Доллар
+														option(value="#") Евро
+													.form-dc__select-label Валюта
+					.form-dc__row
+						.form-dc__col.form-dc__col--4
+							.form-dc__fileblock
+								.form-dc__filecontent
+									.form-dc__filetitle Прикрепить документы : 
+									.form-dc__fileresult Документ №1.doc
+								input(type="file").form-dc__fileinput#file_1
+								label(for="file_1").form-dc__filebtn Загрузить
+						.form-dc__col.form-dc__col--4
+							.form-dc__fileblock
+								.form-dc__filecontent
+									.form-dc__filetitle Прикрепить фотографии о вашем деловом предложении : 
+									.form-dc__fileresult Foto01.jpeg
+								input(type="file").form-dc__fileinput#file_2
+								label(for="file_2").form-dc__filebtn Загрузить
+						.form-dc__col.form-dc__col--4
+							.form-dc__fileblock
+								.form-dc__filecontent
+									.form-dc__filetitle Картинка делового предложения
+									.form-dc__fileresult Foto01.jpeg
+								input(type="file").form-dc__fileinput#file_3
+								label(for="file_3").form-dc__filebtn Загрузить	
+					.form-dc__row
+						.form-dc__col.form-dc__col--12.form-dc__col--mb0
+							.form-dc__title Вознаграждение агенту :
+					.form-dc__row
+						.form-dc__col.form-dc__col--4
+							.form-dc__input.form-dc__input--2
+								input(type="text" required)#input_10
+								label(for="input_10") Цена
+						.form-dc__col.form-dc__col--8
+							.form-dc__bottomtext Укажите вознаграждение, которое вы готовы предоставить агенту за продвижение вашего делового предложения.
+				.form-dc__bottom 
+					.form-dc__bottomtext 
+						span *
+						| — Поля, обязательные для заполнения
+					.form-dc__buttons 
+						button(type="submit").form-dc__btn.form-dc__btn--green Применить
+						a(href="#").form-dc__btn.form-dc__btn--red Нужна помощь?
+			// /form-dc
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	script(src="js/libs/jquery.formstyler.min.js") 
+	script(src="js/libs/jquery.mousewheel.js") 
+	script(src="js/libs/jquery.jscrollpane.min.js") 
+	//- script(src="js/libs/jquery.scrollbar.min.js") 

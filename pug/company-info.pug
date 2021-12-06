@@ -1,0 +1,135 @@
+extends blocks/base.pug
+
+block title 
+	title Данные о компании
+
+block style-libs
+	link(rel="stylesheet", href="css/libs/jquery.formstyler.css")
+	link(rel="stylesheet", href="css/libs/jquery.formstyler.theme.css")
+	link(rel="stylesheet", href="css/libs/jquery.jscrollpane.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500italic,700italic,400,300,500,700subset=latin,cyrillic-ext&amp;display=swap" type="text/css" rel="stylesheet">
+
+block content
+
+	.wrapper-grid
+		.the-wrapper-block-is-not-for-the-site.the-wrapper-block-is-not-for-the-site--big
+
+			// form-dc
+			form(action="#").form-dc
+				.form-dc__container
+					.form-dc__row
+						.form-dc__col.form-dc__col--7
+							.form-dc__title Название компании :  
+								span *
+							.form-dc__input 
+								input(type="text" required)#input_1
+								label(for="input_1") ИП, ООО
+						.form-dc__col.form-dc__col--5
+							.form-dc__title Самозанятый: 
+							.form-dc__checkblock 
+								input#check1(type="checkbox").form-dc__checkinput
+								label(for="check1").form-dc__check
+								label(for="check1").form-dc__ckecktext Поставьте галочку, если вы зарегистрированы как самозанятый
+					.form-dc__row
+						.form-dc__col.form-dc__col--12
+							.form-dc__textarea 
+								textarea#textarea_1(required)
+								label(for="textarea_1") Описание :  
+									span *
+					.form-dc__row
+						.form-dc__col.form-dc__col--7
+							.form-dc__input 
+								input(type="text" required)#input_2
+								label(for="input_2") ИНН 
+									span *
+						.form-dc__col.form-dc__col--5
+							.form-dc__select
+								select#location(name="#") 
+									option(value="#")
+									option(value="#") Астрахань
+									option(value="#") Башкортостан
+									option(value="#") Белгород
+									option(value="#") Биробиджан
+									option(value="#") Брянск
+									option(value="#") Владивосток
+									option(value="#") Владимир
+									option(value="#") Вологда
+									option(value="#") Астрахань
+									option(value="#") Башкортостан
+									option(value="#") Белгород
+									option(value="#") Биробиджан
+									option(value="#") Брянск
+									option(value="#") Владивосток
+									option(value="#") Владимир
+									option(value="#") Вологда
+								.form-dc__select-label Регион  
+										span *
+					.form-dc__row
+						.form-dc__col.form-dc__col--7
+							.form-dc__flex.form-dc__flex--items-center
+								.form-dc__title.form-dc__title--mv.form-dc__title--mr20 Член ТПП: 
+								.form-dc__checkblock.form-dc__checkblock--mv
+									input#check2(type="checkbox").form-dc__checkinput
+									label(for="check2").form-dc__check
+									div
+										label(for="check2").form-dc__ckecktext Отметьте галочку если уже вступили в ТПП.
+										a(href="#").form-dc__checklink Подробнее о вступлении
+						.form-dc__col.form-dc__col--5
+							.form-dc__input 
+								input(type="text" required)#input_3
+								label(for="input_3") E-mail 
+									span *
+					.form-dc__row
+						.form-dc__col.form-dc__col--4
+							.form-dc__fileblock
+								.form-dc__filecontent
+									.form-dc__filetitle Документы с юридической силой : 
+									.form-dc__fileresult Документ №1.doc
+								input(type="file").form-dc__fileinput#file_1
+								label(for="file_1").form-dc__filebtn Загрузить
+						.form-dc__col.form-dc__col--4
+							.form-dc__fileblock
+								.form-dc__filecontent
+									.form-dc__filetitle Дополнительные материалы
+									.form-dc__fileresult Документ №2.ppt
+								input(type="file").form-dc__fileinput#file_2
+								label(for="file_2").form-dc__filebtn Загрузить
+						.form-dc__col.form-dc__col--4
+							.form-dc__fileblock
+								.form-dc__filecontent
+									.form-dc__filetitle Логотип компании
+									.form-dc__fileresult 
+										img(src="img/logo-company.jpg", alt="")
+								input(type="file").form-dc__fileinput#file_3
+								label(for="file_3").form-dc__filebtn Загрузить
+				.form-dc__bottom 
+					.form-dc__bottomtext 
+						span *
+						| — Поля, обязательные для заполнения
+					.form-dc__buttons 
+						button(type="submit").form-dc__btn.form-dc__btn--green Применить
+						a(href="#").form-dc__btn.form-dc__btn--red Нужна помощь?
+				.form-dc__bottom 
+					.form-dc__bottomtext 
+						span *
+						| — Поля, обязательные для заполнения
+					.form-dc__bottomtext 
+						img(src="img/check.png", alt="")
+						| Компания добавлена и опубликована!
+				.form-dc__bottom 
+					.form-dc__buttons 
+						.form-dc__btn.form-dc__btn--green-bd Посмотреть
+						.form-dc__btn.form-dc__btn--green Добавить предложение
+						.form-dc__btn.form-dc__btn--green-bd Применить изменения 
+					.form-dc__buttons 
+						a(href="#").form-dc__btn.form-dc__btn--red Нужна помощь?
+			// /form-dc
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	script(src="js/libs/jquery.formstyler.min.js") 
+	script(src="js/libs/jquery.mousewheel.js") 
+	script(src="js/libs/jquery.jscrollpane.min.js") 
+	//- script(src="js/libs/jquery.scrollbar.min.js") 

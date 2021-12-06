@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Данные о компании</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/libs/jquery.formstyler.css">
+		<link rel="stylesheet" href="css/libs/jquery.formstyler.theme.css">
+		<link rel="stylesheet" href="css/libs/jquery.jscrollpane.css"><link href="https://fonts.googleapis.com/css?family=Roboto:300italic,400italic,500italic,700italic,400,300,500,700subset=latin,cyrillic-ext&amp;display=swap" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body style="margin: 0;">
+		<div class="wrapper-grid">
+			<div class="the-wrapper-block-is-not-for-the-site the-wrapper-block-is-not-for-the-site--big">
+				<!-- form-dc-->
+				<form class="form-dc" action="#">
+					<div class="form-dc__container">
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--7">
+								<div class="form-dc__title">Название компании :  <span>*</span></div>
+								<div class="form-dc__input"> 
+									<input type="text" required id="input_1">
+									<label for="input_1">ИП, ООО</label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--5">
+								<div class="form-dc__title">Самозанятый: </div>
+								<div class="form-dc__checkblock"> 
+									<input class="form-dc__checkinput" id="check1" type="checkbox">
+									<label class="form-dc__check" for="check1"></label>
+									<label class="form-dc__ckecktext" for="check1">Поставьте галочку, если вы зарегистрированы как самозанятый</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--12">
+								<div class="form-dc__textarea"> 
+									<textarea id="textarea_1" required></textarea>
+									<label for="textarea_1">Описание :  <span>*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--7">
+								<div class="form-dc__input"> 
+									<input type="text" required id="input_2">
+									<label for="input_2">ИНН <span>*</span></label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--5">
+								<div class="form-dc__select">
+									<select id="location" name="#"> 
+										<option value="#"></option>
+										<option value="#">Астрахань</option>
+										<option value="#">Башкортостан</option>
+										<option value="#">Белгород</option>
+										<option value="#">Биробиджан</option>
+										<option value="#">Брянск</option>
+										<option value="#">Владивосток</option>
+										<option value="#">Владимир</option>
+										<option value="#">Вологда</option>
+										<option value="#">Астрахань</option>
+										<option value="#">Башкортостан</option>
+										<option value="#">Белгород</option>
+										<option value="#">Биробиджан</option>
+										<option value="#">Брянск</option>
+										<option value="#">Владивосток</option>
+										<option value="#">Владимир</option>
+										<option value="#">Вологда</option>
+									</select>
+									<div class="form-dc__select-label">Регион  <span>*</span></div>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--7">
+								<div class="form-dc__flex form-dc__flex--items-center">
+									<div class="form-dc__title form-dc__title--mv form-dc__title--mr20">Член ТПП: </div>
+									<div class="form-dc__checkblock form-dc__checkblock--mv">
+										<input class="form-dc__checkinput" id="check2" type="checkbox">
+										<label class="form-dc__check" for="check2"></label>
+										<div>
+											<label class="form-dc__ckecktext" for="check2">Отметьте галочку если уже вступили в ТПП.</label><a class="form-dc__checklink" href="#">Подробнее о вступлении</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--5">
+								<div class="form-dc__input"> 
+									<input type="text" required id="input_3">
+									<label for="input_3">E-mail <span>*</span></label>
+								</div>
+							</div>
+						</div>
+						<div class="form-dc__row">
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__fileblock">
+									<div class="form-dc__filecontent">
+										<div class="form-dc__filetitle">Документы с юридической силой : </div>
+										<div class="form-dc__fileresult">Документ №1.doc</div>
+									</div>
+									<input class="form-dc__fileinput" type="file" id="file_1">
+									<label class="form-dc__filebtn" for="file_1">Загрузить</label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__fileblock">
+									<div class="form-dc__filecontent">
+										<div class="form-dc__filetitle">Дополнительные материалы</div>
+										<div class="form-dc__fileresult">Документ №2.ppt</div>
+									</div>
+									<input class="form-dc__fileinput" type="file" id="file_2">
+									<label class="form-dc__filebtn" for="file_2">Загрузить</label>
+								</div>
+							</div>
+							<div class="form-dc__col form-dc__col--4">
+								<div class="form-dc__fileblock">
+									<div class="form-dc__filecontent">
+										<div class="form-dc__filetitle">Логотип компании</div>
+										<div class="form-dc__fileresult"> <img src="img/logo-company.jpg" alt=""></div>
+									</div>
+									<input class="form-dc__fileinput" type="file" id="file_3">
+									<label class="form-dc__filebtn" for="file_3">Загрузить</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-dc__bottom"> 
+						<div class="form-dc__bottomtext"> <span>*</span>— Поля, обязательные для заполнения</div>
+						<div class="form-dc__buttons"> 
+							<button class="form-dc__btn form-dc__btn--green" type="submit">Применить</button><a class="form-dc__btn form-dc__btn--red" href="#">Нужна помощь?</a>
+						</div>
+					</div>
+					<div class="form-dc__bottom"> 
+						<div class="form-dc__bottomtext"> <span>*</span>— Поля, обязательные для заполнения</div>
+						<div class="form-dc__bottomtext"> <img src="img/check.png" alt="">Компания добавлена и опубликована!</div>
+					</div>
+					<div class="form-dc__bottom"> 
+						<div class="form-dc__buttons"> 
+							<div class="form-dc__btn form-dc__btn--green-bd">Посмотреть</div>
+							<div class="form-dc__btn form-dc__btn--green">Добавить предложение</div>
+							<div class="form-dc__btn form-dc__btn--green-bd">Применить изменения </div>
+						</div>
+						<div class="form-dc__buttons"> <a class="form-dc__btn form-dc__btn--red" href="#">Нужна помощь?</a></div>
+					</div>
+				</form>
+				<!-- /form-dc-->
+			</div>
+		</div>
+		<script src="js/libs/jquery.min.js"></script>
+		<script src="js/libs/jquery.formstyler.min.js"> </script>
+		<script src="js/libs/jquery.mousewheel.js"> </script>
+		<script src="js/libs/jquery.jscrollpane.min.js"> </script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
