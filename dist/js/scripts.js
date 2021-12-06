@@ -32,16 +32,6 @@ $(document).ready(function () {
 	}
 	formStyleSelect();
 
-	// if ($('.form-dc__select select').length) {
-	// 	$('.form-dc__select select').select2({
-	// 		minimumResultsForSearch: Infinity,
-	// 	})
-	// 	.on("select2:open", function () {
-	// 		$('.select2-results__options').wrap('<div class="scrollbar-inner"></div>');
-	// 		$('.scrollbar-inner').scrollbar();
-	// 	});
-	// }
-
 	// Табы
 	function tabs(tabs) {
 		if (tabs.length) {
