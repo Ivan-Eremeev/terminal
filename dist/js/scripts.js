@@ -17,7 +17,7 @@ $(document).ready(function () {
 				selectVisibleOptions: 8,
 				onFormStyled: function () {
 					_dropdown = $('.jq-selectbox__dropdown');
-					_dropdown.find('ul').wrap('<div class="scroll-pane" />');
+					_dropdown.find('ul').wrap('<div class="scroll-pane"/>');
 				},
 				onSelectOpened: function () {
 					var _ul = $(this).find('.jq-selectbox__dropdown ul');
