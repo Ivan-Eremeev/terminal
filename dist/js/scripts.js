@@ -1,12 +1,5 @@
 $(document).ready(function () {
 
-	// MatchHeight
-	if ($('.initiatives-nv__col').length) {
-		$('.initiatives-nv__col').matchHeight({
-			byRow: false,
-		});
-	}
-
 	// Селекты
 	function formStyleSelect() {
 		if ($('.form-dc__select select').length) {
