@@ -327,6 +327,8 @@
     margin-bottom: 10px;
   }
   &__fileresult {
+    display: flex;
+    justify-content: space-between;
     color: #3893FF;
   }
   &__fileinput {
@@ -334,7 +336,7 @@
   }
   &__filebtn {
     display: block;
-    max-width: 300px;
+    max-width: 320px;
     padding: 10px 20px;
     background-color: #C4C4C4;
     user-select: none;
@@ -475,6 +477,28 @@
     right: 0;
     bottom: 0;
   }
+  &__filedel {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    &:after,&:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #555;
+      position: absolute;
+      top: 50%;
+     left: 50%;
+    }
+    &:after {
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &:before {
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+  }
   @media (max-width: $break_lg) {
     &__items {
       .row-grid {
@@ -541,9 +565,4 @@
       }
     }
   }
-}
-
-.select2-results__options {
-  max-height: 100px;
-  overflow: auto;
 }

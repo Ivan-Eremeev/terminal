@@ -520,6 +520,12 @@ img {
   margin-bottom: 10px;
 }
 .form-dc__fileresult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: #3893FF;
 }
 .form-dc__fileinput {
@@ -527,7 +533,7 @@ img {
 }
 .form-dc__filebtn {
   display: block;
-  max-width: 300px;
+  max-width: 320px;
   padding: 10px 20px;
   background-color: #C4C4C4;
   -webkit-user-select: none;
@@ -698,6 +704,32 @@ img {
   right: 0;
   bottom: 0;
 }
+.form-dc__filedel {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.form-dc__filedel:after, .form-dc__filedel:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #555;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.form-dc__filedel:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.form-dc__filedel:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 @media (max-width: 1200px) {
   .form-dc__items .row-grid {
     margin-left: -30px;
@@ -765,11 +797,6 @@ img {
     border-top: 1px solid #AFAFAF;
     border-bottom: 1px solid #AFAFAF;
   }
-}
-
-.select2-results__options {
-  max-height: 100px;
-  overflow: auto;
 }
 
 .offer-item {
